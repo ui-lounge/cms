@@ -1,0 +1,36 @@
+{
+  "name": "ui-cms",
+  "private": true,
+  "version": "0.0.1",
+  "description": "A Strapi application for UI cms",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "strapi": "3.6.9",
+    "strapi-admin": "3.6.9",
+    "strapi-utils": "3.6.9",
+    "strapi-plugin-content-type-builder": "3.6.9",
+    "strapi-plugin-content-manager": "3.6.9",
+    "strapi-plugin-users-permissions": "3.6.9",
+    "strapi-plugin-email": "3.6.9",
+    "strapi-plugin-upload": "3.6.9",
+    "strapi-plugin-i18n": "3.6.9",
+    "strapi-connector-mongoose": "3.6.9"
+  },
+  "author": {
+    "name": "Khuvituguldur Narantsetseg"
+  },
+  "strapi": {
+    "uuid": "22b2a0c6-9f34-4196-81ed-21b0f3f27958"
+  },
+  "engines": {
+    "node": ">=10.16.0 <=14.x.x",
+    "npm": "^6.0.0"
+  },
+  "license": "MIT"
+}
