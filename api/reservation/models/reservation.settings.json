@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reservations",
+  "info": {
+    "name": "reservation",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "string",
+      "required": true
+    },
+    "phone": {
+      "type": "integer",
+      "required": true
+    },
+    "confirmed": {
+      "type": "boolean",
+      "required": true,
+      "default": false,
+      "private": true
+    },
+    "note": {
+      "type": "text",
+      "maxLength": 560
+    },
+    "seats": {
+      "type": "integer",
+      "required": true,
+      "min": 1
+    },
+    "time": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

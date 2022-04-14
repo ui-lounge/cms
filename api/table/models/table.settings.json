@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tables",
+  "info": {
+    "name": "table",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "normal",
+        "vip",
+        "terrace"
+      ],
+      "required": true,
+      "default": "normal"
+    },
+    "seats": {
+      "type": "integer",
+      "required": true,
+      "default": 1
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "default": "unnamed"
+    },
+    "active": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    }
+  }
+}
