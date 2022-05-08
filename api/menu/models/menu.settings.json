@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "menus",
+  "info": {
+    "name": "Menu",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "category": {
+      "model": "category"
+    },
+    "price": {
+      "type": "integer",
+      "required": true
+    },
+    "discounted": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "number": {
+      "type": "integer",
+      "required": true,
+      "unique": true
+    },
+    "shot": {
+      "type": "integer"
+    }
+  }
+}
