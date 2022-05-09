@@ -46,6 +46,9 @@
     },
     "shot": {
       "type": "integer"
+    },
+    "shot_label": {
+      "type": "string"
     }
   }
 }
